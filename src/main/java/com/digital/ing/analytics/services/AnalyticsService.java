@@ -21,7 +21,11 @@ public class AnalyticsService {
         AnalyticsResponse analyticalResponse = new AnalyticsResponse();
         List<AnalyticsDetails> analyticalList = new ArrayList<>();
         
-        
+        analyticsRepository.findAll().forEach((data)->{
+        	AnalyticsDetails details = mapEntityToResponse(data);      
+        analyticalList.add(details);
+        });
+        analyticalResponse.setAnalyticDetails(analyticalList);
         return analyticalResponse;
     }
 
