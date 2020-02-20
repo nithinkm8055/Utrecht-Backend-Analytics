@@ -33,6 +33,7 @@ public class AnalyticsService {
         AnalyticsDetails analyticaldetails = new AnalyticsDetails();
         analyticaldetails.setHitCount(analyticEntity.getHitCount());
         analyticaldetails.setPageId(analyticEntity.getPageId());
+        analyticaldetails.setId(analyticEntity.getId());
         return analyticaldetails;
     }
 
