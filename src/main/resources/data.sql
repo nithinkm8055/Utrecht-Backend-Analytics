@@ -1,4 +1,4 @@
-insert into Analytics values("Overview", 5);
-insert into Analytics values("Mortage Product", 5); 
-insert into Analytics values("Payment Product", 25); 
+insert into Analytics values(1, 5, 'Overview');
+insert into Analytics values(2, 25, 'Mortage Product'); 
+insert into Analytics values(3, 30, 'Payment Product'); 
 
