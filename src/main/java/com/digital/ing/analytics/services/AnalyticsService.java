@@ -31,4 +31,9 @@ public class AnalyticsService {
         analyticaldetails.setPageId(analyticEntity.getPageId());
         return analyticaldetails;
     }
+
+	public void updatePageHitCount(String pageId) {
+		
+		
+	}
 }
